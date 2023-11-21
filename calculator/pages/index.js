@@ -30,20 +30,21 @@ const Calculator = () => {
         Select when you would like to start your new UX/UI Design job
       </Typography>
       <Slider
+        color={'success'}
         value={selectedMonth}
         min={0}
         max={12}
         step={1}
         marks={[
-          { value: 0, label: 'Now' },
+          { value: 0, label: 'Now'},
           { value: 3, label: '3 months' },
           { value: 6, label: '6 months' },
           { value: 9, label: '9 months' },
-          { value: 12, label: '12 months' },
+          { value: 12, label: '12 months' },          
         ]}
         valueLabelDisplay="auto"
         onChange={handleSliderChange}
-        style={{ width: '80%', margin: 'auto' }}
+        style={{ width: '80%', margin: 'auto', color: 'palegreen'}}
       />
       <Button variant="contained" color="primary" onClick={handleCalculateClick} style={{ marginTop: '20px' }}>
         Calculate
